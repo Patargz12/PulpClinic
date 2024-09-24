@@ -4,11 +4,16 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
+  const location = useLocation(); // Get the current location
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Scroll to the top when the route changes
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page on route change
+  }, [location]); // Depend on location to trigger this on route change
 
   useEffect(() => {
     var lastScrollTop = 0;
