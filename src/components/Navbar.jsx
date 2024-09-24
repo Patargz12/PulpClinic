@@ -105,7 +105,7 @@ export default function Navbar() {
           isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         } overflow-hidden`}
       >
-        <ul className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <ul className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52">
           <li>
             <Link
               to="/"
