@@ -10,7 +10,7 @@ body {
 }
 
 :root {
-  color-scheme: only light;
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,7 +19,6 @@ body {
   }
 }
 
-/* Chrome */
 @media (forced-colors: active) {
   :root {
     color-scheme: light;
