@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
 body {
-  overflow-x: hidden; /* Disable horizontal scrolling */
-  overflow-y: auto; /* Allow vertical scrolling (or adjust as needed) */
+  overflow-x: hidden;
+  width: 100%;
+  color-scheme: light;
 }
 
 nav {

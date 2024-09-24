@@ -61,7 +61,7 @@ const Services = () => {
 const StyledWrapper = styled.div`
   @media only screen and (max-width: 1022px) {
     .header {
-      margin-top: 300px;
+      margin-top: 72px;
     }
   }
 `;
