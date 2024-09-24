@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  background-color: white; /* Set a light background color explicitly */
+  color-scheme: light; /* Sets the preferred color scheme */
+}
+
+:root {
+  color-scheme: light; /* Enforce light color scheme */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light; /* Enforce light scheme even in dark mode */
+    background-color: white; /* Ensure light background */
+    color: black; /* Set text color for readability */
+  }
+}
+
+@media (forced-colors: active) {
+  :root {
+    color-scheme: light; /* For accessibility */
+    background-color: white; /* Ensure light background */
+    color: black; /* Set text color for readability */
+  }
+}

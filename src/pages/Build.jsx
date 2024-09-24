@@ -53,7 +53,16 @@ const Gallery = () => {
                 expertise and dedication.
               </p>
               <div data-aos="zoom-out" data-aos-delay="1000" className="mt-8">
-                <button class="button-primary">Learn more</button>
+                <button
+                  class="button-primary"
+                  onClick={() =>
+                    window.open(
+                      "https://www.polyhealth.ph/services?63e35809_page=4"
+                    )
+                  }
+                >
+                  Learn more
+                </button>
               </div>
             </div>
           </div>

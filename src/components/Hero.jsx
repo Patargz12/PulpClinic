@@ -24,7 +24,6 @@ const Hero = () => {
           <div
             className="mr-auto place-self-center lg:col-span-7"
             data-aos="fade-up-right"
-            // Conditionally add the 'data-aos-delay' attribute for large screens
             {...(isLargeScreen && { "data-aos-delay": "2500" })}
           >
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
@@ -56,7 +55,18 @@ const Hero = () => {
             </a>
 
             <div className="center">
-              <button className="button-primary">Contact Us</button>
+              <button
+                className="button-primary"
+                onClick={() =>
+                  window.open(
+                    "https://www.facebook.com/",
+                    "_blank",
+                    "noopener noreferrer"
+                  )
+                }
+              >
+                Contact Us
+              </button>
             </div>
           </div>
           <div className="lg:mt-0 lg:col-span-5 lg:flex place-self-center">
