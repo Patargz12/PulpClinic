@@ -30,10 +30,21 @@ export default function Navbar() {
     };
   }, []);
 
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("light");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+  document.documentElement.classList.remove("dark");
+
   return (
     <nav
       id="navbar"
-      className="navbar z-100 bg-base-100 transition-all duration-500 ease-in-out shadow-lg px-6 md:px-24"
+      className="navbar z-100 transition-all duration-500 ease-in-out shadow-lg px-6 md:px-24"
     >
       <div className="flex-1">
         <img src={logo} className="h-16" alt="Logo" />

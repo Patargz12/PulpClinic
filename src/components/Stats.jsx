@@ -46,7 +46,7 @@ const Stats = () => {
                 </div>
                 <div className="p-4 w-full">
                   <h2 className="title-font font-bold text-3xl text-primary">
-                    3000+
+                    2500+
                   </h2>
                   <p className="leading-relaxed font-bold">Dental Checkups</p>
                 </div>

@@ -3,9 +3,7 @@ export default function ContactUs() {
     <section className="container mx-auto bg-white">
       <div className="mt-24 px-4 md:px-16 lg:px-32 py-12">
         <div data-aos="fade-right">
-          <p className="font-bold text-primary dark:text-blue-400">
-            Contact us
-          </p>
+          <p className="font-bold text-primary">Contact us</p>
 
           <h1 className="max-w-2xl mb-4 mt-4 text-3xl font-extrabold leading-none md:text-5xl xl:text-5xl">
             <span className="text-primary">GET </span> IN TOUCH
@@ -41,7 +39,7 @@ export default function ContactUs() {
               <h2 className="mt-4 text-base text-primary font-semibold">
                 Email
               </h2>
-              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+              <p className="mt-2 text-sm text-gray-500">
                 Our friendly team is here to help.
               </p>
               <p className="mt-2 text-sm ">- pulpclinic@gmail.com</p>
