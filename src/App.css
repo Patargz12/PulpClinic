@@ -9,6 +9,23 @@ body {
   color-scheme: light;
 }
 
+:root {
+  color-scheme: only light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+}
+
+/* Chrome */
+@media (forced-colors: active) {
+  :root {
+    color-scheme: light;
+  }
+}
+
 nav {
   position: fixed;
   top: 0;
