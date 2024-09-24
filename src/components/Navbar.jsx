@@ -49,10 +49,10 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className="navbar z-100 bg-base-100 transition-all duration-500 ease-in-out shadow-lg px-6 md:px-24"
+      className="navbar z-100 bg-white transition-all duration-500 ease-in-out shadow-lg px-6 md:px-24"
     >
       <div className="flex-1">
-        <img src={logo} className="h-16" alt="Logo" />
+        <img src={logo} className="h-12" alt="Logo" />
       </div>
       <div className="flex-none md:hidden">
         <button className="btn btn-ghost btn-circle" onClick={toggleMenu}>
