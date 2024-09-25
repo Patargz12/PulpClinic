@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Toast from "../Toast";
 
 const News_Card = () => {
   return (
